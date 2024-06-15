@@ -1,0 +1,123 @@
+.search-form {
+  background: #333;
+  padding: 10px 40px;
+  border-radius: 10px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #f3dcdc;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.search-form form {
+  margin: 10px 0;
+}
+
+.search-form input {
+  width: 70%;
+  transition: transform 0.2s; /* Smooth transition */
+}
+
+.search-form input:hover {
+  transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.search-form input,
+.search-form button {
+  outline: none;
+  padding: 14px;
+  border-radius: 7px;
+  border: none;
+}
+
+.search-form button {
+  padding: 14px 40px;
+  background: #f65c97;
+  margin: 0 8px;
+  color: #f2b3b3;
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.search-form button:hover {
+  background: #f33a75; /* Darken background on hover */
+  color: #fff; /* Change text color to white on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.search-results {
+  background-color: #f4baba;
+  padding: 10px 30px;
+  margin: 20px 0;
+  border-radius: 10px;
+  transition: box-shadow 0.3s;
+}
+
+.search-results:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+  align-items: center;
+  padding: 0;
+  border-bottom: #444 solid 1px;
+}
+
+.user .image {
+  width: 20%;
+  transition: transform 0.3s;
+}
+
+.user .image img {
+  width: 100%;
+  border-radius: 10%;
+}
+
+.user .image img:hover {
+  transform: scale(1.1); /* Slightly enlarge image on hover */
+}
+
+.user-info * {
+  display: block;
+  padding: 0 10px;
+}
+
+.more-options {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.more-options select,
+.pagination button {
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.pagination button {
+  background-color: #333;
+  color: #918d8d;
+  margin: 0 5px;
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.pagination button:hover {
+  background-color: #555; /* Darker background on hover */
+  color: #fff; /* Change text color to white */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Adding a hover effect to select elements */
+.more-options select:hover {
+  background-color: #f65c97; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+}
+
